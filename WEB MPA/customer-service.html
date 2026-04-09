@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Customer Service | LembagaKita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR (sama seperti index.html) -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-2 sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="brand-icon"><i class="bi bi-building"></i></span> 
+            <span id="institutionName">LembagaKita</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Beranda</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-person-badge"></i> Profil</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="sejarah.html"><i class="bi bi-clock-history"></i> Sejarah Lembaga</a></li>
+                        <li><a class="dropdown-item" href="visi-misi.html"><i class="bi bi-eye"></i> Visi & Misi</a></li>
+                        <li><a class="dropdown-item" href="struktur.html"><i class="bi bi-diagram-3"></i> Struktur Organisasi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="customer-service.html"><i class="bi bi-headset"></i> Customer Service</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> Tentang Kami</a></li>
+                <li class="nav-item" id="loginNavItem"><a class="nav-link" href="login.html"><i class="bi bi-box-arrow-in-right"></i> Login</a></li>
+                <li class="nav-item">
+                    <div class="language-selector">
+                        <span class="lang-option" id="langId">🇮🇩 ID</span>
+                        <span class="lang-option" id="langEn">🇬🇧 EN</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="container my-4">
+    <div class="page-card animate-fadeInUp">
+        <div class="d-flex align-items-center gap-3 mb-4">
+            <i class="bi bi-headset fs-1 text-primary animate-float"></i>
+            <div>
+                <h2 class="mb-0" id="csTitle">Layanan Pelanggan & Bantuan</h2>
+                <p class="text-muted" id="csSubtitle">Kami siap membantu Anda 24/7</p>
+            </div>
+        </div>
+        <div class="contact-phone-card p-4 rounded-4 mb-4">
+            <h5><i class="bi bi-telephone-forward-fill"></i> <span id="csHotline">Hotline & Bantuan Teknis</span></h5>
+            <p class="fs-3 fw-bold mt-2"><i class="bi bi-whatsapp animate-pulse"></i> +62 812-3456-7890</p>
+            <p><i class="bi bi-envelope-paper"></i> <strong id="csEmail">Email:</strong> cs@lembagakita.id | support@lembagakita.id</p>
+            <p><i class="bi bi-clock-history"></i> <strong id="csHours">Jam Operasional:</strong> <span id="csHoursValue">Senin - Sabtu, 08.00 - 16.30 WIB</span></p>
+            <div class="alert alert-info mt-3">
+                <i class="bi bi-info-circle-fill"></i> <span id="csInfo">Jika terjadi masalah teknis atau kendala layanan, segera hubungi nomor di atas.</span>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="border rounded-3 p-3 bg-light">
+                    <i class="bi bi-telephone-x fs-5 text-danger"></i> 
+                    <strong id="csEmergency">Nomor Darurat Layanan:</strong> (021) 1500-123
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="border rounded-3 p-3 bg-light">
+                    <i class="bi bi-chat-dots fs-5 text-primary"></i> 
+                    <strong id="csLiveChat">Live Chat:</strong> <span id="csLiveChatText">Tersedia di pojok kanan bawah</span>
+                </div>
+            </div>
+            <div class="col-12 mt-2">
+                <div class="p-3 rounded-3" style="background: #f0f4f9;">
+                    <i class="bi bi-question-circle-fill"></i> <strong id="csHelpCenter">Pusat Bantuan:</strong> <span id="csHelpText">Panduan penggunaan web, reset password, dan FAQ.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<div class="footer-mini">
+    <i class="bi bi-envelope-fill"></i> <span id="footerEmail">Layanan 24 Jam: help@lembagakita.id</span> | 
+    <i class="bi bi-telephone-fill"></i> <span id="footerPhone">(021) 1234-5678</span>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/language.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
